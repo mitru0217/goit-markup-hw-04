@@ -34,7 +34,7 @@ ul {
     list-style: none;
 }
 a {
-    text-decoration: none;
+       text-decoration: none;
 }
 button {
     cursor: pointer;
@@ -62,11 +62,14 @@ button {
 .auth-nav .item + .item {
     margin-left: 50px;
 } 
-.mail::before {
-    content: "";
-    background-image: url(../images/envelope.svg);
-    Width: 16px;
-    Height: 12px;
+.auth-icon {
+    width: 16px;
+    height: 12px;
+    fill: #757575;
+    margin-right: 10px;
+}
+.auth-icon:hover {
+    fill: var(--activ-color);
 }
 .link-contakt {
     color: var(--text-color);
@@ -181,6 +184,14 @@ text-align: center;
 .features-list .item:not(:last-child) {
     margin-right: 30px;
 }
+ .features-icon::before {
+    content: "";
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    border: 1px solid black;
+} 
 .features-text, .footer-text {
     font-size: 14px;
     line-height: 1.7;
