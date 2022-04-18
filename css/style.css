@@ -3,14 +3,18 @@
     --text-color: #757575;
     --activ-color: #2196F3;
 }
+html { width: 1600px;
+}
 body {
     background-color: #FFFFFF;
     font-family: 'Roboto', sans-serif;
     margin: 0;
+    width: 1600px;
 }
-h1, h2, h3, h4, h5, h6, p, ul {
+h1, h2, h3, h4, h5, h6, p, ul, li, a, svg {
     margin: 0;
     padding: 0;
+    border: none;
 }
 .container {
     width: 1200px;
@@ -34,7 +38,7 @@ ul {
     list-style: none;
 }
 a {
-       text-decoration: none;
+    text-decoration: none;
 }
 button {
     cursor: pointer;
@@ -61,15 +65,14 @@ button {
 }
 .auth-nav .item + .item {
     margin-left: 50px;
-} 
+}
 .auth-icon {
-    width: 16px;
-    height: 12px;
     fill: #757575;
+    vertical-align: middle;
     margin-right: 10px;
 }
 .auth-icon:hover {
-    fill: var(--activ-color);
+    fill: var(--activ-color) ;
 }
 .link-contakt {
     color: var(--text-color);
@@ -120,21 +123,15 @@ line-height: 1.2;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
-.overlay {
-    max-width: 1600px;
-    height: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4) ), url(../images/hero.jpg);
-    background-position: center;
-    background-size: cover;
-    
-}
+
 .hero, .footer-bg-color {
     background-color: #2F303A;
 }
 .hero-title, .btn, .address-color, .logo-footer {
     color: #FFFFFF;
+}
+.hero-title {
+    margin-bottom: 30px;
 }
 .hero-text { 
 font-weight: 900;
@@ -144,20 +141,40 @@ text-transform: uppercase;
 text-align: center;
 }
 .btn {
- display: block;  
+ display: block;
+ width: 200px;
+ height: 50px; 
  background-color: #2196F3;
  margin: 0 auto;
+ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+ border-radius: 4px;
 }
+
 .btn:hover {
     background-color: rgba(24, 140, 232, 1);
 }
 .btn-text {
+    padding: 0;
+    align-items: center;
+    text-align: center;
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.06em;
-    text-align: center;
+    }
+    .f-svg {
+        width: 270px;
+        height: 120px;
+        background-color: #F5F4FA;
+        margin-bottom: 30px;
+    }
+    .f-icon {
+        width: 70px;
+        height: 70px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        margin-left: 100px;
     }
 .title-text {
     margin-bottom: 10px;
@@ -181,17 +198,12 @@ text-align: center;
 .features-list {
     display: flex;
 }
+.features-list .item {
+    width: 270px;
+}
 .features-list .item:not(:last-child) {
     margin-right: 30px;
 }
- .features-icon::before {
-    content: "";
-    width: 270px;
-    height: 120px;
-    background-color: #F5F4FA;
-    border-radius: 4px;
-    border: 1px solid black;
-} 
 .features-text, .footer-text {
     font-size: 14px;
     line-height: 1.7;
@@ -242,6 +254,19 @@ background-color: #FFFFFF;
     text-align: center;
     letter-spacing: 0.03em;
 }
+.clients {
+    display: flex;
+}
+.client-link {
+    width: 170px;
+    height: 92px;
+    background-color: #E5E5E5;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+.clients .client-link + .client-link {
+    margin-left: 30px;
+}
 .contakt-color {
     color: rgba(255, 255, 255, 0.6);
 }
@@ -252,6 +277,9 @@ background-color: #FFFFFF;
     display: inline-block;
     margin-bottom: 20px;
 }
+.f-container {
+    display: flex;
+}
 .f-padding {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -261,6 +289,41 @@ background-color: #FFFFFF;
 }
 .footer-site .item + .item {
     margin-top: 9px;
+}
+.contact-block {
+    width: 231px;
+}
+.social {
+    width: 210px;
+    margin-left: 70px;
+    padding-top: 8px;
+}
+.text-color {
+    color: #FFFFFF;
+    margin-bottom: 20px; 
+}
+.footer-social {
+    display: flex;
+}
+.social-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;  
+    outline: 1px solid orangered;
+}
+.footer-social .social-icon + .social-icon {
+    margin-left: 10px;
+}
+/* .social-link {
+    width: 20px;
+    height: 20px;
+    outline: 1px solid tomato;
+} */
+.social-svg {
+    
+    width: 20px;
+    height: 20px;
+    outline: 1px solid tomato;
 }
 .filter-text {
     font-family: inherit;
@@ -275,7 +338,7 @@ background-color: #FFFFFF;
     margin-bottom: 56px;
 }
 .portfolio-site .item + .item {
-    margin-left: 30px;
+    margin-left: 8px;
 } 
 .portfolio-list {
     display: flex;
