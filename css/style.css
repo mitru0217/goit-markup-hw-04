@@ -422,8 +422,6 @@ fill: rgba(255, 255, 255, 1);
 }
 .portfolio-btn {
     padding: 6px 22px;
-    
-    border-radius: 4px;
 }
 .portfolio-btn:hover, .portfolio-btn:focus  {
     background-color: rgba(24, 140, 232, 1);
