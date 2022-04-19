@@ -126,6 +126,16 @@ line-height: 1.2;
 
 .hero, .footer-bg-color {
     background-color: #2F303A;
+   
+}
+.overlay {
+    min-width: 1600px;
+    height: 600px;
+    margin-left: auto; 
+    margin-right: auto;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+    background-position: center;
+    background-size: cover;
 }
 .hero-title, .btn, .address-color, .logo-footer {
     color: #FFFFFF;
@@ -229,6 +239,8 @@ text-align: center;
 .team-card {
 width: 270px;
 background-color: #FFFFFF;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
 }
 .team-text {
     font-size: 16px;
@@ -340,6 +352,7 @@ background-color: #FFFFFF;
 .portfolio-site .item + .item {
     margin-left: 8px;
 } 
+
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
@@ -348,7 +361,10 @@ background-color: #FFFFFF;
     width: 370px;
     border: 1px solid rgba(238, 238, 238, 1);
     margin-right: 30px;
-    margin-bottom: 30px
+    margin-bottom: 30px;
+}
+.portfolio-card:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .portfolio-card:nth-child(3n) {
     margin-right: 0;
@@ -363,6 +379,13 @@ background-color: #FFFFFF;
 }
 .portfolio-btn {
     padding: 6px 22px;
+    
+    border-radius: 4px;
+}
+.portfolio-btn:hover {
+    background-color: rgba(24, 140, 232, 1);
+    color: #FFFFFF;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .portfolio-img {
     display: block;
