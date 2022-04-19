@@ -13,24 +13,38 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header class="header-border">
-        <div class="container main-nav">
-            <a href="#" class="link logo-text logo-margin-h"><span class="logo-color-f ">Web</span>Studio </a>
-            <nav>
-                <ul class="site-nav">
-                    <li class="item"><a href="#" class="link text-header">Студия</a></li>
-                    <li class="item"><a href="./index.html" class="link text-header">Портфолио </a></li>
-                    <li class="item"><a href="#" class="link text-header">Контакты </a></li>
-                </ul>
-            </nav>
-            <ul class="auth-nav">
-                <li class="item"><a href="#" class="link-contakt text-header">info@devstudio.com </a></li>
-                <li class="item"><a href="#" class="link-contakt text-header">+38 096 111 11 11</a></li>
-            </ul>
-        </div>
+     <header class="header-border">
+      <div class="container main-nav">
+        <a href="#" class="link logo-text logo-margin-h"
+          ><span class="logo-color-f">Web</span>Studio
+        </a>
+        <nav>
+          <ul class="site-nav">
+            <li class="item"><a href="#" class="link text-header">Студия</a></li>
+            <li class="item"><a href="./index.html" class="link text-header">Портфолио </a></li>
+            <li class="item"><a href="#" class="link text-header">Контакты </a></li>
+          </ul>
+        </nav>
+        <ul class="auth-nav">
+          <li class="item">
+            <a href="mailto:info@devstudio.com" class="link-contakt text-header">
+              <svg class="auth-icon" width="16px" height="12px">
+                <use href="./images/symbol-defs.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="item">
+            <a href="tel:+38 096 111 11 11" class="link-contakt text-header">
+                <svg class="auth-icon" width="16px" height="12px">
+                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+              </svg>
+                 +38 096 111 11 11 </a>
+          </li>
+        </ul>
+      </div>
     </header>
-    <main>
-        
+    <main> 
         <section class="section">
             <div class="container">
                     <ul class="portfolio-site">
@@ -136,18 +150,61 @@
             </div> 
         </section>
     </main>
-<footer class="footer-bg-color f-padding">
-    <div class="container">
-        <a href="#" class="logo-footer logo-text logo-margin-f"><span class="logo-color-f">Web</span>Studio </a>
-        <address class="address-text">
+ <footer class="footer-bg-color f-padding">
+      <div class="container f-container">
+        <div class="contact-block">
+          <a href="#" class="logo-footer logo-text logo-margin-f"
+            ><span class="logo-color-f">Web</span>Studio
+          </a>
+          <address class="address-text">
             <ul class="footer-site">
-                <li class="item"><a href="#" class="address-color footer-text">г. Киев, пр-т Леси Украинки, 26 </a><br>
-                </li>
-                <li class="item"><a href="#" class="contakt-color footer-text">info@example.com</a><br></li>
-                <li class="item"><a href="#" class="contakt-color footer-text">+38 099 111 11 11</a></li>
+              <li class="item">
+                <a href="#" class="address-color footer-text">г. Киев, пр-т Леси Украинки, 26 </a
+                ><br />
+              </li>
+              <li class="item">
+                <a href="#" class="contakt-color footer-text">info@example.com</a><br />
+              </li>
+              <li class="item">
+                <a href="#" class="contakt-color footer-text">+38 099 111 11 11</a>
+              </li>
             </ul>
-        </address>
-    </div>
-</footer>
+          </address>
+        </div>
+        <div class="social">
+          <h3 class="title-text text-color">Присоединяйтесь</h3>
+          <ul class="footer-social">
+            <li class="social-icon">
+              <a href="#" class="s-link">
+                       <svg  class="icon icon-fill">
+                           <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
+                       </svg>   
+                </a>
+            </li>
+            <li class="social-icon">
+                <a href="#" class="s-link">
+                       <svg  class="icon icon-fill">
+                           <use href="./images/symbol-defs.svg#icon-twitter-1"></use>
+                       </svg>   
+                </a>
+            </li>
+            <li class="social-icon">
+                <a href="#" class="s-link">
+                       <svg  class="icon icon-fill">
+                           <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
+                       </svg>   
+                </a>
+            </li>
+            <li class="social-icon">
+                <a href="#" class="s-link">
+                       <svg  class="icon icon-fill">
+                           <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
+                       </svg>   
+                </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
 </body>
 </html>
