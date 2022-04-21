@@ -69,19 +69,16 @@ button {
     vertical-align: middle;
     margin-right: 10px;
 }
-.auth-icon:hover, .auth-icon:focus {
-    fill: var(--activ-color) ;
-}
-.link-contakt {
-    color: var(--text-color);
-}
 .logo-color-f {
     color: #2196F3;
 }
 .link:hover, .link:focus {
    color: var(--activ-color);
 }
-.link-contakt:hover, .link-contakt:focus {
+.auth-nav .link-contakt:hover .auth-icon, .auth-nav .link-contakt:focus .auth-icon {
+    fill: var(--activ-color);
+}
+.link-contakt:hover, .link-contakt:focus  {
     color: var(--activ-color);
 }
 .link,
@@ -225,7 +222,7 @@ text-align: center;
     margin-left: 30px;
 }
 .team {
-    max-width: 1600px;
+   
     background-color:#F5F4FA;
     margin: 0 auto;
 }
